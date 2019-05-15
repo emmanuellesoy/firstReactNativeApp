@@ -1,21 +1,23 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
-import Login from "./components/Login";
+import {
+    SafeAreaView,
+    StyleSheet,
+    View
+} from "react-native";
+import Header from "./components/Header";
 
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#6BEAC4",
-        alignItems: "center",
-        justifyContent: "center",
     },
 });
 
 const App = () => (
-    <View style={styles.container}>
-        <Login />
-    </View>
+    <SafeAreaView style={styles.container}>
+        <Header />
+    </SafeAreaView>
 );
 
 export default App;
