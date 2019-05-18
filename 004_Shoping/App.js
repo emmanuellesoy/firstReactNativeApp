@@ -1,5 +1,6 @@
 import React from "react";
 import {
+    Platform,
     SafeAreaView,
     ScrollView,
     StyleSheet,
@@ -13,6 +14,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#6BEAC4",
+        paddingTop: Platform.OS === "android" ? 25 : 0,
     },
 });
 
