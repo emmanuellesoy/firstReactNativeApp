@@ -3,20 +3,21 @@ import {
     Image,
     StyleSheet,
     Text,
-    View
+    View,
 } from "react-native";
 
 const LOGO = require("../assets/icon.png");
 
 const styles = StyleSheet.create({
     header: {
+        width: "100%",
         height: 80,
         backgroundColor: "#f5f5f5",
         flexDirection: "row",
         alignItems: "center",
         padding: 20,
         borderBottomWidth: 4,
-        borderColor: "#464c53"
+        borderColor: "#464c53",
     },
     logo: {
         width: 32,
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 16,
         fontStyle: "italic",
-    }
+    },
 });
 
 const Header = () => (
